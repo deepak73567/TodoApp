@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    background-image: url(./images/notepad-bg.jpg);
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    /* overflow: scroll; */
+    display: flex;
+    flex-direction: column;
+}
+
+
+.header {
+    color: tomato;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.task {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    color: rgb(254, 254, 254);
+    position: relative;
+
+}
+
+
+
+.container{
+    position: relative;
+    height:10rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0rem;
+}
+
+.container::before{
+    content: "";
+    background: #000;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity:  .5;
+    height: 100%;
+    z-index: -1;
+}
+
+.delete{
+    height: 100%;
+    border: 0;
+    padding: 0rem 1rem;
+    border-radius: 0rem 1rem 1rem 0rem;
+    background: mediumaquamarine;
+;
+    
+}
+
+.get-task{
+    height: 100%;
+    width: 50%;
+    padding: 0rem 2rem;
+    outline: none;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    border-radius: 1rem 0rem 0rem 1rem;
+    border: 0;
+}
+
+
+.todo-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem 3rem;
+    width: 50%;
+}
+
+.todo{
+    display: flex;
+    margin: .5rem;
+    width: 100%;
+    height: 4rem;
+}
+.todo-item {
+    border-radius: 1rem 0rem 0rem 1rem;
+    list-style: none;
+    /* border: 2px solid red; */
+    background: #0000005a;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /* height: 100%; */
+    padding-left: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+
+
+@media(max-width:872px)
+{
+    .todo-container{
+        width: 100%;
+        padding: 0rem 7rem;
+    }
+
+    
+}
+
+@media(max-width:567px)
+{
+    .get-task{
+        font-size: 1rem;
+        padding: 0rem 1rem ;
+    }
+
+    .todo-container{
+        padding: 0rem 5rem;
+    }
+
+    
+}
+
