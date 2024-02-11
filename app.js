@@ -26,7 +26,7 @@ btn.addEventListener("click", function() {
     }
     
 });
-ul.addEventListener("click", function (event){
+todo_container.addEventListener("click", function (event){
     // console.log("button clicked");
     // console.log(event.target.nodeName); //this will tell uexactly which btton is clicked
     if (event.target.nodeName == "BUTTON") {
