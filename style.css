@@ -95,18 +95,16 @@ body{
     height: 4rem;
 }
 .todo-item {
-    border-radius: 1rem 0rem 0rem 1rem;
     list-style: none;
-    /* border: 2px solid red; */
     background: #0000005a;
-    display: flex;
     align-items: center;
     width: 100%;
-    /* height: 100%; */
-    padding-left: 2rem;
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: bold;
     overflow: hidden;
+    padding: .5rem 1rem;
+    text-align: start;
+    word-wrap: break-word;
 }
 
 
@@ -129,7 +127,7 @@ body{
     }
 
     .todo-container{
-        padding: 0rem 5rem;
+        padding: 0rem 2rem;
     }
 
     
